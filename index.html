@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form name="menu-form">
+        <h1>Entre Em Contato</h1>
+
+        
+        <input type="text" id="nomeid" placeholder="Insira Seu Nome" required="required" name="nome"/>
+        <label for="nome">Nome</label>
+
+        
+        <input type="tel" id="foneid" placeholder="Insira Seu fone" required="required" name="fone"/>
+        <label for="fone">Fone</label>
+
+        
+        <input type="email" id="emailid" placeholder="Insira Seu email" required="required" name="email"/>
+        <label for="email">Email</label>
+        
+        <textarea placeholder="Deixe sua opnião"></textarea>
+        <input type="submit" class="enviar" onClick="Enviar();" value="Enviar"/>
+    
+    </form>
+
+    <script>
+        function Enviar(){
+            var nome=document.getElementById("nomeid");
+
+            if(nome.value!= ""){
+                alert("Obrigado " + nome.value + " seus dados foram enviados com suceddo");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
